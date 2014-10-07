@@ -118,6 +118,7 @@ void ik_drawfontbig(t_ik_image *img, t_ik_font *fnt, int32 x, int32 y, uint8 co,
 }
 
 // PRINT A LINE
+#pragma unmanaged
 void ik_print(t_ik_image *img, t_ik_font *fnt, int32 x, int32 y, uint8 co, char *ln, ...)
 {
 	char dlin[256], *dl=dlin;
@@ -243,3 +244,4 @@ void ik_text_input(int x, int y, int l, t_ik_font *fnt, char *pmt, char *tx, int
 	}
 }
 
+#pragma managed

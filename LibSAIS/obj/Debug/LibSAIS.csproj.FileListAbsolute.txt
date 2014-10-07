@@ -1,0 +1,14 @@
+C:\dev\LibSAIS\bin\Debug\LibSAIS.dll
+C:\dev\LibSAIS\bin\Debug\LibSAIS.pdb
+C:\dev\LibSAIS\bin\Debug\log4net.dll
+C:\dev\LibSAIS\bin\Debug\Ninject.dll
+C:\dev\LibSAIS\bin\Debug\log4net.xml
+C:\dev\LibSAIS\bin\Debug\Ninject.xml
+C:\dev\LibSAIS\obj\Debug\LibSAIS.csprojResolveAssemblyReference.cache
+C:\dev\LibSAIS\obj\Debug\LibSAIS.dll
+C:\dev\LibSAIS\obj\Debug\LibSAIS.pdb
+C:\dev\SAIS\LibSAIS\bin\Debug\LibSAIS.dll
+C:\dev\SAIS\LibSAIS\bin\Debug\LibSAIS.pdb
+C:\dev\SAIS\LibSAIS\obj\Debug\LibSAIS.dll
+C:\dev\SAIS\LibSAIS\obj\Debug\LibSAIS.pdb
+C:\dev\SAIS\LibSAIS\obj\Debug\LibSAIS.csprojResolveAssemblyReference.cache

@@ -509,11 +509,14 @@ int32 main_menu()
 
 void main_init()
 {
-	int x;
+	
+	LibSAIS::Log::Error(gcnew String("Testing"));
+	Console::WriteLine("Hello, world!");
+	int x=0;
 	FILE *fil;
 	must_quit=0;
 	wants_screenshot=0;
-
+	
 	fil = myopen("graphics/palette.dat", "rb");
 	fread(globalpal, 1, 768, fil);
 	fclose(fil);

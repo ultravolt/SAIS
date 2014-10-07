@@ -151,6 +151,7 @@ void ik_start_log()
 	last_logdate = -1;
 }
 
+#pragma unmanaged
 void ik_print_log(char *ln, ...)
 {
 	char dlin[256], *dl=dlin;
@@ -183,3 +184,4 @@ void ik_print_log(char *ln, ...)
 
 	fprintf(logfile, dl);
 }
+#pragma managed

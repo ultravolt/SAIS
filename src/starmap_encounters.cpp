@@ -114,7 +114,7 @@ int32 starmap_entersystem()
 
 void starmap_exploreplanet()
 {
-	int32 mc, c, ti, ot;
+	int32 mc, c, ti=0, ot;
 	int32 h, n;
 	int32 s, sh;
 	int32 end = 0;
