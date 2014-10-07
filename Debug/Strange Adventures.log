@@ -1,0 +1,38 @@
+﻿Build started 10/7/2014 8:32:56 AM.
+     1>Project "C:\dev\SAIS\Strange Adventures.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (.\Debug\) contains files shared from another project (is_explorer.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1193,5): warning MSB8012: TargetPath(C:\dev\SAIS\.\Debug\Strange Adventures.exe) does not match the Linker's OutputFile property value (C:\dev\SAIS\bin\strange_dbg.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1195,5): warning MSB8012: TargetName(Strange Adventures) does not match the Linker's OutputFile property value (strange_dbg). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\bin\strange_dbg.exe" /INCREMENTAL /NOLOGO /LIBPATH:".\SDL-1.2.8\lib" /LIBPATH:".\SDL_mixer-1.2.8\lib" SDLmain.lib SDL.lib SDL_mixer.lib winmm.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:msvcrt /NODEFAULTLIB:libcmt /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:".\Debug\Strange Adventures.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\Strange Adventures.lib" /MACHINE:X86 /SAFESEH .\Debug\Script1.res
+         .\output\cards.obj
+         .\output\combat.obj
+         .\output\combat_display.obj
+         .\output\combat_init.obj
+         .\output\combat_sim.obj
+         .\output\combat_weapons.obj
+         .\output\endgame.obj
+         .\output\font.obj
+         .\output\gfx.obj
+         .\output\interface.obj
+         .\output\is_fileio.obj
+         .\output\main.obj
+         .\output\modconfig.obj
+         .\output\sdl_iface.obj
+         .\output\sdl_main.obj
+         .\output\sound.obj
+         .\output\sprites.obj
+         .\output\starmap.obj
+         .\output\starmap_encounters.obj
+         .\output\starmap_init.obj
+         .\output\starmap_inventory.obj
+         .\output\startgame.obj
+         .\output\textstr.obj
+         .\output\w32_gfx.obj
+         .\output\w32_sound.obj
+         Strange Adventures.vcxproj -> C:\dev\SAIS\.\Debug\Strange Adventures.exe
+     1>Done Building Project "C:\dev\SAIS\Strange Adventures.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.16
