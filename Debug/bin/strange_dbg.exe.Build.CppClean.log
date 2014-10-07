@@ -1,0 +1,71 @@
+c:\dev\sais\output\strange adventures.bsc
+c:\dev\sais\output\vc120.pdb
+c:\dev\sais\output\vc120.idb
+c:\dev\sais\debug\w32_sound.sbr
+c:\dev\sais\debug\w32_gfx.sbr
+c:\dev\sais\debug\textstr.sbr
+c:\dev\sais\debug\startgame.sbr
+c:\dev\sais\debug\starmap_inventory.sbr
+c:\dev\sais\debug\starmap_init.sbr
+c:\dev\sais\debug\starmap_encounters.sbr
+c:\dev\sais\debug\starmap.sbr
+c:\dev\sais\debug\sprites.sbr
+c:\dev\sais\debug\sound.sbr
+c:\dev\sais\debug\sdl_main.sbr
+c:\dev\sais\debug\sdl_iface.sbr
+c:\dev\sais\debug\modconfig.sbr
+c:\dev\sais\debug\main.sbr
+c:\dev\sais\debug\is_fileio.sbr
+c:\dev\sais\debug\interface.sbr
+c:\dev\sais\debug\gfx.sbr
+c:\dev\sais\debug\font.sbr
+c:\dev\sais\debug\endgame.sbr
+c:\dev\sais\debug\combat_weapons.sbr
+c:\dev\sais\output\combat_weapons.obj
+c:\dev\sais\output\endgame.obj
+c:\dev\sais\output\font.obj
+c:\dev\sais\output\gfx.obj
+c:\dev\sais\output\interface.obj
+c:\dev\sais\output\is_fileio.obj
+c:\dev\sais\output\main.obj
+c:\dev\sais\output\modconfig.obj
+c:\dev\sais\output\sdl_iface.obj
+c:\dev\sais\output\sdl_main.obj
+c:\dev\sais\output\sound.obj
+c:\dev\sais\output\sprites.obj
+c:\dev\sais\output\starmap.obj
+c:\dev\sais\output\starmap_encounters.obj
+c:\dev\sais\output\starmap_init.obj
+c:\dev\sais\output\starmap_inventory.obj
+c:\dev\sais\output\startgame.obj
+c:\dev\sais\output\textstr.obj
+c:\dev\sais\output\w32_gfx.obj
+c:\dev\sais\output\w32_sound.obj
+c:\dev\sais\debug\combat_sim.sbr
+c:\dev\sais\debug\combat_init.sbr
+c:\dev\sais\debug\combat_display.sbr
+c:\dev\sais\debug\combat.sbr
+c:\dev\sais\debug\cards.sbr
+c:\dev\sais\output\cards.obj
+c:\dev\sais\output\combat.obj
+c:\dev\sais\output\combat_display.obj
+c:\dev\sais\output\combat_init.obj
+c:\dev\sais\output\combat_sim.obj
+c:\dev\sais\bin\strange_dbg.ilk
+c:\dev\sais\bin\strange_dbg.exe
+c:\dev\sais\debug\strange adventures.pdb
+c:\dev\sais\debug\bin\strange_dbg.exe.pdb
+c:\dev\sais\debug\script1.res
+c:\dev\sais\debug\strange_dbg.exe.pdb
+c:\dev\sais\debug\strange .3c3afbe1.tlog\bscmake.command.1.tlog
+c:\dev\sais\debug\strange .3c3afbe1.tlog\bscmake.read.1.tlog
+c:\dev\sais\debug\strange .3c3afbe1.tlog\bscmake.write.1.tlog
+c:\dev\sais\debug\strange .3c3afbe1.tlog\cl.command.1.tlog
+c:\dev\sais\debug\strange .3c3afbe1.tlog\cl.read.1.tlog
+c:\dev\sais\debug\strange .3c3afbe1.tlog\cl.write.1.tlog
+c:\dev\sais\debug\strange .3c3afbe1.tlog\link.command.1.tlog
+c:\dev\sais\debug\strange .3c3afbe1.tlog\link.read.1.tlog
+c:\dev\sais\debug\strange .3c3afbe1.tlog\link.write.1.tlog
+c:\dev\sais\debug\strange .3c3afbe1.tlog\rc.command.1.tlog
+c:\dev\sais\debug\strange .3c3afbe1.tlog\rc.read.1.tlog
+c:\dev\sais\debug\strange .3c3afbe1.tlog\rc.write.1.tlog

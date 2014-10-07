@@ -1,0 +1,70 @@
+﻿Build started 10/7/2014 12:00:01 PM.
+     1>Project "C:\dev\SAIS\Strange Adventures.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(363,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(364,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I".\SDL-1.2.8\include" /I".\SDL_mixer-1.2.8\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\output\\" /Fd".\output\vc120.pdb" /FR"output\\" /Gd /TP /analyze- /errorReport:prompt src\cards.cpp src\combat.cpp src\combat_display.cpp src\combat_init.cpp src\combat_sim.cpp src\combat_weapons.cpp src\endgame.cpp src\font.cpp src\gfx.cpp src\interface.cpp src\is_fileio.cpp src\main.cpp src\modconfig.cpp src\sdl_iface.cpp src\sdl_main.cpp src\sound.cpp src\sprites.cpp src\starmap.cpp src\starmap_encounters.cpp src\starmap_init.cpp src\starmap_inventory.cpp src\startgame.cpp src\textstr.cpp src\w32_gfx.cpp src\w32_sound.cpp
+         Skipping... (no relevant changes detected)
+         w32_sound.cpp
+         w32_gfx.cpp
+         textstr.cpp
+         startgame.cpp
+         starmap_inventory.cpp
+         starmap_init.cpp
+         starmap_encounters.cpp
+         starmap.cpp
+         sprites.cpp
+         sound.cpp
+         sdl_main.cpp
+         sdl_iface.cpp
+         modconfig.cpp
+         main.cpp
+         is_fileio.cpp
+         interface.cpp
+         gfx.cpp
+         font.cpp
+         endgame.cpp
+         combat_weapons.cpp
+         combat_sim.cpp
+         combat_init.cpp
+         combat_display.cpp
+         combat.cpp
+         cards.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _VC80_UPGRADE=0x0600 /l"0x0409" /Isrc /nologo /fo"output\Script1.res" src\Script1.rc 
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1193,5): warning MSB8012: TargetPath(C:\dev\SAIS\Debug\strange_dbg.exe) does not match the Linker's OutputFile property value (C:\dev\SAIS\bin\strange_dbg.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\bin\strange_dbg.exe" /INCREMENTAL /NOLOGO /LIBPATH:".\SDL-1.2.8\lib" /LIBPATH:".\SDL_mixer-1.2.8\lib" SDLmain.lib SDL.lib SDL_mixer.lib winmm.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:msvcrt /NODEFAULTLIB:libcmt /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"Debug\strange_dbg.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Debug\strange_dbg.lib" /MACHINE:X86 /SAFESEH output\Script1.res
+         .\output\cards.obj
+         .\output\combat.obj
+         .\output\combat_display.obj
+         .\output\combat_init.obj
+         .\output\combat_sim.obj
+         .\output\combat_weapons.obj
+         .\output\endgame.obj
+         .\output\font.obj
+         .\output\gfx.obj
+         .\output\interface.obj
+         .\output\is_fileio.obj
+         .\output\main.obj
+         .\output\modconfig.obj
+         .\output\sdl_iface.obj
+         .\output\sdl_main.obj
+         .\output\sound.obj
+         .\output\sprites.obj
+         .\output\starmap.obj
+         .\output\starmap_encounters.obj
+         .\output\starmap_init.obj
+         .\output\starmap_inventory.obj
+         .\output\startgame.obj
+         .\output\textstr.obj
+         .\output\w32_gfx.obj
+         .\output\w32_sound.obj
+         Strange Adventures.vcxproj -> C:\dev\SAIS\Debug\strange_dbg.exe
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\bscmake.exe /nologo /o".\output\Strange Adventures.bsc" output\cards.sbr output\combat.sbr output\combat_display.sbr output\combat_init.sbr output\combat_sim.sbr output\combat_weapons.sbr output\endgame.sbr output\font.sbr output\gfx.sbr output\interface.sbr output\is_fileio.sbr output\main.sbr output\modconfig.sbr output\sdl_iface.sbr output\sdl_main.sbr output\sound.sbr output\sprites.sbr output\starmap.sbr output\starmap_encounters.sbr output\starmap_init.sbr output\starmap_inventory.sbr output\startgame.sbr output\textstr.sbr output\w32_gfx.sbr output\w32_sound.sbr
+     1>Done Building Project "C:\dev\SAIS\Strange Adventures.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.30
