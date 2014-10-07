@@ -511,7 +511,7 @@ void main_init()
 {
 	
 	LibSAIS::Log::Error(gcnew String("Testing"));
-	Console::WriteLine("Hello, world!");
+	
 	int x=0;
 	FILE *fil;
 	must_quit=0;
