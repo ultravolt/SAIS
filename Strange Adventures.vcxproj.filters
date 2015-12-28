@@ -128,6 +128,9 @@
     <ClInclude Include="src\Typedefs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="afxres.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="src\Script1.rc">

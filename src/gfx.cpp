@@ -522,8 +522,8 @@ void ik_save_tga(char *fname, t_ik_image *img, uint8 *pal)
 		0, 1, 1,								// id_len, pal_type, img_type
 		0, 0, 0, 1,	24,					// first_color, num_colors, pal_size
 		0, 0, 0, 0,							// left, top
-		img->w&255, img->w>>8,	// width
-		img->h&255, img->h>>8,	// height
+		(uint8)(img->w&255), (uint8)(img->w>>8),	// width
+		(uint8)(img->h&255), (uint8)(img->h>>8),	// height
 		8, 8										// bpp, des_bits
 		};
 	FILE *fil;
