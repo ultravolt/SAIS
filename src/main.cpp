@@ -510,7 +510,7 @@ int32 main_menu()
 void main_init()
 {
 	
-	LibSAIS::Log::Error(gcnew String("Testing"));
+	//LibSAIS::Log::Error(gcnew String("Testing"));
 	
 	int x=0;
 	FILE *fil;

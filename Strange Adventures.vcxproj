@@ -73,6 +73,7 @@
       <ProgramDataBaseFileName>.\output\</ProgramDataBaseFileName>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <AdditionalUsingDirectories>C:\dev\SAIS\LibSAIS\bin\Debug;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <CompileAsManaged>true</CompileAsManaged>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>

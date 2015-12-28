@@ -1,5 +1,75 @@
-c:\dev\sais\debug\libsais.dll
+c:\dev\sais\output\strange adventures.bsc
 c:\dev\sais\output\vc140.pdb
-c:\dev\sais\output\strange .3c3afbe1.tlog\cl.command.1.tlog
+c:\dev\sais\output\.netframework,version=v4.0.assemblyattributes.sbr
+c:\dev\sais\output\.netframework,version=v4.0.assemblyattributes.obj
+c:\dev\sais\output\.netframework,version=v4.0.assemblyattributes.asm
+c:\dev\sais\output\
+c:\dev\sais\output\cards.sbr
+c:\dev\sais\output\combat.sbr
+c:\dev\sais\output\combat_display.sbr
+c:\dev\sais\output\combat_init.sbr
+c:\dev\sais\output\combat_sim.sbr
+c:\dev\sais\output\combat_weapons.sbr
+c:\dev\sais\output\endgame.sbr
+c:\dev\sais\output\font.sbr
+c:\dev\sais\output\gfx.sbr
+c:\dev\sais\output\interface.sbr
+c:\dev\sais\output\is_fileio.sbr
+c:\dev\sais\output\main.sbr
+c:\dev\sais\output\modconfig.sbr
+c:\dev\sais\output\sdl_iface.sbr
+c:\dev\sais\output\sdl_main.sbr
+c:\dev\sais\output\sound.sbr
+c:\dev\sais\output\sprites.sbr
+c:\dev\sais\output\starmap.sbr
+c:\dev\sais\output\starmap_encounters.sbr
+c:\dev\sais\output\starmap_init.sbr
+c:\dev\sais\output\starmap_init.obj
+c:\dev\sais\output\starmap_encounters.obj
+c:\dev\sais\output\starmap.obj
+c:\dev\sais\output\sprites.obj
+c:\dev\sais\output\sound.obj
+c:\dev\sais\output\sdl_main.obj
+c:\dev\sais\output\sdl_iface.obj
+c:\dev\sais\output\modconfig.obj
+c:\dev\sais\output\is_fileio.obj
+c:\dev\sais\output\interface.obj
+c:\dev\sais\output\gfx.obj
+c:\dev\sais\output\font.obj
+c:\dev\sais\output\endgame.obj
+c:\dev\sais\output\combat_weapons.obj
+c:\dev\sais\output\combat_sim.obj
+c:\dev\sais\output\combat_init.obj
+c:\dev\sais\output\combat_display.obj
+c:\dev\sais\output\combat.obj
+c:\dev\sais\output\cards.obj
+c:\dev\sais\output\starmap_inventory.sbr
+c:\dev\sais\output\startgame.sbr
+c:\dev\sais\output\textstr.sbr
+c:\dev\sais\output\w32_gfx.sbr
+c:\dev\sais\output\w32_sound.sbr
+c:\dev\sais\output\w32_sound.obj
+c:\dev\sais\output\w32_gfx.obj
+c:\dev\sais\output\textstr.obj
+c:\dev\sais\output\startgame.obj
+c:\dev\sais\output\starmap_inventory.obj
+c:\dev\sais\bin\strange_dbg.exe
+c:\dev\sais\debug\strange_dbg.pdb
 c:\dev\sais\output\strange .3c3afbe1.tlog\metagen.write.1.tlog
-c:\dev\sais\output\strange .3c3afbe1.tlog\strange adventures.write.1u.tlog
+c:\dev\sais\output\script1.res
+c:\dev\sais\output\strange adventures.vcxprojresolveassemblyreference.cache
+c:\dev\sais\output\strange .3c3afbe1.tlog\bscmake.command.1.tlog
+c:\dev\sais\output\strange .3c3afbe1.tlog\bscmake.read.1.tlog
+c:\dev\sais\output\strange .3c3afbe1.tlog\bscmake.write.1.tlog
+c:\dev\sais\output\strange .3c3afbe1.tlog\cl.command.1.tlog
+c:\dev\sais\output\strange .3c3afbe1.tlog\cl.read.1.tlog
+c:\dev\sais\output\strange .3c3afbe1.tlog\cl.write.1.tlog
+c:\dev\sais\output\strange .3c3afbe1.tlog\link.command.1.tlog
+c:\dev\sais\output\strange .3c3afbe1.tlog\link.read.1.tlog
+c:\dev\sais\output\strange .3c3afbe1.tlog\link.write.1.tlog
+c:\dev\sais\output\strange .3c3afbe1.tlog\metagen.read.1.tlog
+c:\dev\sais\output\strange .3c3afbe1.tlog\rc.command.1.tlog
+c:\dev\sais\output\strange .3c3afbe1.tlog\rc.read.1.tlog
+c:\dev\sais\output\strange .3c3afbe1.tlog\rc.write.1.tlog
+c:\dev\sais\output\strange .3c3afbe1.tlog\libsais.dll.metagen
+c:\dev\sais\output\strange .3c3afbe1.tlog\tzres.dll.bi
