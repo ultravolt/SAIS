@@ -11,3 +11,4 @@ C:\dev\SAIS\LibSAIS\bin\Debug\LibSAIS.dll
 C:\dev\SAIS\LibSAIS\bin\Debug\LibSAIS.pdb
 C:\dev\SAIS\LibSAIS\obj\Debug\LibSAIS.dll
 C:\dev\SAIS\LibSAIS\obj\Debug\LibSAIS.pdb
+C:\dev\SAIS\LibSAIS\obj\Debug\LibSAIS.csprojResolveAssemblyReference.cache

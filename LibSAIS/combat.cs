@@ -387,7 +387,7 @@ namespace DigitalEeel
         public static int num_ships;
 
         public static char[,] racename = new char[16, 32];
-        public static int num_races;
+        
         public static int[] enemies = new int[16];
         public static int num_enemies;
 

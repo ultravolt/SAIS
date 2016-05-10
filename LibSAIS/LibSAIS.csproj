@@ -49,7 +49,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Log.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -64,11 +63,11 @@
     <Compile Include="iface_globals.cs" />
     <Compile Include="interface.cs" />
     <Compile Include="is_fileio.cs" />
-    <Content Include="snd.h" />
-    <Content Include="starmap.h" />
-    <Content Include="startgame.h" />
-    <Content Include="textstr.h" />
-    <Content Include="Typedefs.h" />
+    <Compile Include="snd.cs" />
+    <Compile Include="starmap.cs" />
+    <Compile Include="startgame.cs" />
+    <Compile Include="textstr.cs" />
+    <Compile Include="Typedefs.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
