@@ -55,6 +55,21 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Include="afxres.cs" />
+    <Compile Include="cards.cs" />
+    <Compile Include="combat.cs" />
+    <Compile Include="endgame.cs" />
+    <Compile Include="gfx.cs" />
+    <Compile Include="iface_globals.cs" />
+    <Compile Include="interface.cs" />
+    <Compile Include="is_fileio.cs" />
+    <Content Include="snd.h" />
+    <Content Include="starmap.h" />
+    <Content Include="startgame.h" />
+    <Content Include="textstr.h" />
+    <Content Include="Typedefs.h" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -1,9 +1,5 @@
 c:\dev\sais\output\strange adventures.bsc
 c:\dev\sais\output\vc140.pdb
-c:\dev\sais\output\.netframework,version=v4.0.assemblyattributes.sbr
-c:\dev\sais\output\.netframework,version=v4.0.assemblyattributes.obj
-c:\dev\sais\output\.netframework,version=v4.0.assemblyattributes.asm
-c:\dev\sais\output\
 c:\dev\sais\output\cards.sbr
 c:\dev\sais\output\combat.sbr
 c:\dev\sais\output\combat_display.sbr
@@ -32,6 +28,7 @@ c:\dev\sais\output\sound.obj
 c:\dev\sais\output\sdl_main.obj
 c:\dev\sais\output\sdl_iface.obj
 c:\dev\sais\output\modconfig.obj
+c:\dev\sais\output\main.obj
 c:\dev\sais\output\is_fileio.obj
 c:\dev\sais\output\interface.obj
 c:\dev\sais\output\gfx.obj
@@ -53,6 +50,10 @@ c:\dev\sais\output\w32_gfx.obj
 c:\dev\sais\output\textstr.obj
 c:\dev\sais\output\startgame.obj
 c:\dev\sais\output\starmap_inventory.obj
+c:\dev\sais\output\.netframework,version=v4.0.assemblyattributes.sbr
+c:\dev\sais\output\.netframework,version=v4.0.assemblyattributes.obj
+c:\dev\sais\output\.netframework,version=v4.0.assemblyattributes.asm
+c:\dev\sais\output\
 c:\dev\sais\bin\strange_dbg.exe
 c:\dev\sais\debug\strange_dbg.pdb
 c:\dev\sais\output\strange .3c3afbe1.tlog\metagen.write.1.tlog
