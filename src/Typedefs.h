@@ -25,4 +25,4 @@ typedef double float64;
 #using <LibSAIS.dll>
 //another using namespace directive.
 using namespace System;
-using namespace LibSAIS;
+//using namespace LibSAIS;
