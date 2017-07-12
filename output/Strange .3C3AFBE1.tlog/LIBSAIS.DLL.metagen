@@ -1,0 +1,1231 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly LibSAIS, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class DigitalEeel.SAIS: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    DigitalEeel.SDL_Surface sdlsurf : Public, Static
+    Int32 opt_verbose : Public, Static
+    t_ik_spritepak spr_titles : Public, Static
+    Int32 COMBAT_INTERFACE_COLOR : Public, Static
+    Int32 IsMinimized : Public, Static
+    t_ik_image combatbg1 : Public, Static
+    t_ik_image combatbg2 : Public, Static
+    t_ik_spritepak spr_ships : Public, Static
+    t_ik_spritepak spr_shipsilu : Public, Static
+    t_ik_spritepak spr_weapons : Public, Static
+    t_ik_spritepak spr_explode1 : Public, Static
+    t_ik_spritepak spr_shockwave : Public, Static
+    t_ik_spritepak spr_shield : Public, Static
+    System.Collections.Generic.List`1[DigitalEeel.SAIS+t_hull] hulls : Public, Static
+    Int32 num_hulls : Public, Static
+    System.Collections.Generic.List`1[DigitalEeel.SAIS+t_shiptype] shiptypes : Public, Static
+    Int32 num_shiptypes : Public, Static
+    System.Collections.Generic.List`1[DigitalEeel.SAIS+t_shipweapon] shipweapons : Public, Static
+    Int32 num_shipweapons : Public, Static
+    System.Collections.Generic.List`1[DigitalEeel.SAIS+t_shipsystem] shipsystems : Public, Static
+    Int32 num_shipsystems : Public, Static
+    System.Collections.Generic.List`1[DigitalEeel.SAIS+t_ship] ships : Public, Static
+    Int32 num_ships : Public, Static
+    Char[,] racename : Public, Static
+    Int32[] enemies : Public, Static
+    Int32 num_enemies : Public, Static
+    t_job jobs : Public, Static
+    Int32 num_jobs : Public, Static
+    Int32 num_scores : Public, Static
+    t_score[] scores : Public, Static
+    Int32 got_hiscore : Public, Static
+    t_ik_image screen : Public, Static
+    t_paletteentry globalpal : Public, Static
+    t_paletteentry currentpal : Public, Static
+    t_ik_image screenbuf : Public, Static
+    Int32 gfx_width : Public, Static
+    Int32 gfx_height : Public, Static
+    Int32 gfx_fullscreen : Public, Static
+    Int32 gfx_switch : Public, Static
+    Int32 gfx_redraw : Public, Static
+    Int32 c_minx : Public, Static
+    Int32 c_miny : Public, Static
+    Int32 c_maxx : Public, Static
+    Int32 c_maxy : Public, Static
+    IntPtr[] gfx_transbuffer : Public, Static
+    IntPtr[] gfx_lightbuffer : Public, Static
+    IntPtr[] gfx_addbuffer : Public, Static
+    Int32[] sin1k : Public, Static
+    Int32[] cos1k : Public, Static
+    t_gamesettings settings : Public, Static
+    Int32 ik_mouse_x : Public, Static
+    Int32 ik_mouse_y : Public, Static
+    Int32 ik_mouse_b : Public, Static
+    Int32 ik_mouse_c : Public, Static
+    Boolean must_quit : Public, Static
+    Int32 wants_screenshot : Public, Static
+    Int32 key_left : Public, Static
+    Int32 key_right : Public, Static
+    Int32 key_up : Public, Static
+    Int32 key_down : Public, Static
+    Int32[] key_f : Public, Static
+    Int32 key_fire1 : Public, Static
+    Int32 key_fire2 : Public, Static
+    Int32 key_fire2b : Public, Static
+    t_ik_spritepak spr_IFborder : Public, Static
+    t_ik_spritepak spr_IFbutton : Public, Static
+    t_ik_spritepak spr_IFslider : Public, Static
+    t_ik_spritepak spr_IFarrows : Public, Static
+    t_ik_spritepak spr_IFsystem : Public, Static
+    t_ik_spritepak spr_IFtarget : Public, Static
+    t_ik_spritepak spr_IFdifnebula : Public, Static
+    t_ik_spritepak spr_IFdifenemy : Public, Static
+    t_ik_font font_4x8 : Public, Static
+    t_ik_font font_6x8 : Public, Static
+    DigitalEeel.FILE logfile : Public, Static
+    Int32 last_logdate : Public, Static
+    t_sfxchannel[] sfxchan : Public, Static
+    t_wavesound[] wavesnd : Public, Static
+    Int32[] m_freq : Public, Static
+    Byte m_mainvol : Public, Static
+    Int32 s_volume : Public, Static
+    t_song m_song : Public, Static
+    Byte m_playing : Public, Static
+    t_month[] months : Public, Static
+    t_race[] races : Public, Static
+    Int32 num_races : Public, Static
+    t_racefleet[] racefleets : Public, Static
+    Int32 num_racefleets : Public, Static
+    System.Collections.Generic.List`1[DigitalEeel.SAIS+t_planettype] platypes : Public, Static
+    Int32 num_platypes : Public, Static
+    t_startype startypes : Public, Static
+    Int32 num_startypes : Public, Static
+    System.Collections.Generic.List`1[DigitalEeel.SAIS+t_itemtype] itemtypes : Public, Static
+    Int32 num_itemtypes : Public, Static
+    System.Collections.Generic.List`1[DigitalEeel.SAIS+t_starsystem] sm_stars : Public, Static
+    Int32 num_stars : Public, Static
+    System.Collections.Generic.List`1[DigitalEeel.SAIS+t_blackhole] sm_holes : Public, Static
+    Int32 num_holes : Public, Static
+    System.Collections.Generic.List`1[DigitalEeel.SAIS+t_nebula] sm_nebula : Public, Static
+    Int32 num_nebula : Public, Static
+    t_fleet[] sm_fleets : Public, Static
+    t_ik_spritepak spr_SMstars : Public, Static
+    t_ik_spritepak spr_SMstars2 : Public, Static
+    t_ik_spritepak spr_SMplanet : Public, Static
+    t_ik_spritepak spr_SMplanet2 : Public, Static
+    t_ik_spritepak spr_SMnebula : Public, Static
+    t_ik_spritepak spr_SMraces : Public, Static
+    Byte[] sm_nebulamap : Public, Static
+    t_ik_image sm_nebulagfx : Public, Static
+    t_ik_image sm_starfield : Public, Static
+    Int32[,] star_env : Public, Static
+    Int32[] plgfx_type : Public, Static
+    Int32 num_plgfx : Public, Static
+    Int32 homesystem : Public, Static
+    t_player player : Public, Static
+    t_hud hud : Public, Static
+    Int32[] kla_items : Public, Static
+    Int32 kla_numitems : Public, Static
+    System.Collections.Generic.List`1[System.String] captnames : Public, Static
+    Int32 num_captnames : Public, Static
+    System.Collections.Generic.List`1[System.String] shipnames : Public, Static
+    Int32 num_shipnames : Public, Static
+    Int32 starmap_tutorialtype : Public, Static
+    System.String textbuffer : Public, Static
+    System.Collections.Generic.List`1[System.String] textstring : Public, Static
+    System.String[] ecard_keywords : Public, Static
+    System.Collections.Generic.List`1[DigitalEeel.SAIS+t_eventcard] ecards : Public, Static
+    t_combatcamera camera : Public, Static
+    t_ship[] cships : Public, Static
+    t_wepbeam[] cbeams : Public, Static
+    t_wepproj[] cprojs : Public, Static
+    t_explosion[] cexplo : Public, Static
+    Int32 numships : Public, Static
+    Int32 playership : Public, Static
+    Int32[] sortship : Public, Static
+    Int32 t_move : Public, Static
+    Int32 t_disp : Public, Static
+    Int32 pause : Public, Static
+    Int32 nebula : Public, Static
+    Int32 retreat : Public, Static
+    Int32 rett : Public, Static
+    Int32 klaktime : Public, Static
+    Int32 klakavail : Public, Static
+    Int32 gongavail : Public, Static
+    Int32 simulated : Public, Static
+    System.String[] hull_keywords : Public, Static
+    System.String[] shiptype_keywords : Public, Static
+    System.String[] shipweapon_keywords : Public, Static
+    System.String[] shipweapon_flagwords : Public, Static
+    System.String[] shipsystem_keywords : Public, Static
+    System.String[] race_keywords : Public, Static
+    Int32 MAIN_INTERFACE_COLOR = 0 : Public, Static, Literal, HasDefault
+    Int32 MAX_COMBAT_SHIPS = 32 : Public, Static, Literal, HasDefault
+    Int32 MAX_COMBAT_PROJECTILES = 256 : Public, Static, Literal, HasDefault
+    Int32 MAX_COMBAT_BEAMS = 256 : Public, Static, Literal, HasDefault
+    Int32 MAX_COMBAT_EXPLOS = 256 : Public, Static, Literal, HasDefault
+    Int32 COMBAT_FRAMERATE = 50 : Public, Static, Literal, HasDefault
+    System.String SAIS_VERSION_NUMBER = v1.5 : Public, Static, Literal, HasDefault
+    Int32 IF_BORDER_TRANS = 0 : Public, Static, Literal, HasDefault
+    Int32 IF_BORDER_SOLID = 9 : Public, Static, Literal, HasDefault
+    Int32 IF_BORDER_PORTRAIT = 18 : Public, Static, Literal, HasDefault
+    Int32 IF_BORDER_RADAR = 19 : Public, Static, Literal, HasDefault
+    Int32 IF_BORDER_FLAT = 20 : Public, Static, Literal, HasDefault
+    Int32 IF_BORDER_SMALL = 21 : Public, Static, Literal, HasDefault
+    Int32 CHN_SFX = 0 : Public, Static, Literal, HasDefault
+    Int32 NUM_SFX = 15 : Public, Static, Literal, HasDefault
+    sfxsamples SND_BEAMS = 0 : Public, Static, Literal, HasDefault
+    sfxsamples SND_PROJS = 7 : Public, Static, Literal, HasDefault
+    sfxsamples SND_HITS = 18 : Public, Static, Literal, HasDefault
+    sfxsamples SND_ITEMS = 99 : Public, Static, Literal, HasDefault
+    sfxsamples SND_ARTIF = 104 : Public, Static, Literal, HasDefault
+    Int32 WAV_MAX = 0 : Public, Static, Literal, HasDefault
+    Int32 STARMAP_FRAMERATE = 50 : Public, Static, Literal, HasDefault
+    Int32 SM_MAP_X = 160 : Public, Static, Literal, HasDefault
+    Int32 SM_MAP_Y = 0 : Public, Static, Literal, HasDefault
+    Int32 SM_SHIP_X = 0 : Public, Static, Literal, HasDefault
+    Int32 SM_SHIP_Y = 0 : Public, Static, Literal, HasDefault
+    Int32 SM_INV_X = 0 : Public, Static, Literal, HasDefault
+    Int32 SM_INV_Y = 256 : Public, Static, Literal, HasDefault
+    Int32 SM_SEL_X = 0 : Public, Static, Literal, HasDefault
+    Int32 SM_SEL_Y = 384 : Public, Static, Literal, HasDefault
+    Int32 STARMAP_INTERFACE_COLOR = 11 : Public, Static, Literal, HasDefault
+    Int32 STARMAP_MAX_FLEETS = 8 : Public, Static, Literal, HasDefault
+    Int32 RC_MUCRON = 9 : Public, Static, Literal, HasDefault
+    Int32 RC_PLANET = 10 : Public, Static, Literal, HasDefault
+    Int32 RC_FOMAX = 11 : Public, Static, Literal, HasDefault
+    Int32 RC_BLOWUP = 12 : Public, Static, Literal, HasDefault
+    Int32 RC_HOLED = 13 : Public, Static, Literal, HasDefault
+    Int32 RC_LOST = 14 : Public, Static, Literal, HasDefault
+    Int32 NUM_FLEETS = 5 : Public, Static, Literal, HasDefault
+    Int32 NUM_STARSYSTEMS = 16 : Public, Static, Literal, HasDefault
+    Int32 NUM_EVENTS = 2 : Public, Static, Literal, HasDefault
+    Int32 NUM_ALLIES = 2 : Public, Static, Literal, HasDefault
+    Int32 NUM_ITEMS = 6 : Public, Static, Literal, HasDefault
+    Int32 NUM_RAREITEMS = 2 : Public, Static, Literal, HasDefault
+    Int32 NUM_LIFEFORMS = 3 : Public, Static, Literal, HasDefault
+    Int32 STRINGBUFFER_SIZE = 131072 : Public, Static, Literal, HasDefault
+    Int32 CS_SHIP = 24 : Public, Static, Literal, HasDefault
+    Int32 CS_WING = 72 : Public, Static, Literal, HasDefault
+    Int32 CS_FLEET = 184 : Public, Static, Literal, HasDefault
+  Properties:
+    System.String moddir 'get set' : 
+    Int32 num_ecards 'get ' : 
+  Methods:
+    saveconfig(): PrivateScope, Public, Static, HideBySig
+    AsBool(Int32): PrivateScope, Public, Static, HideBySig
+    new_sprite(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    calc_sprite_color(t_ik_sprite): PrivateScope, Public, Static, HideBySig
+    get_sprite(t_ik_image, Int32, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    free_sprite(t_ik_sprite): PrivateScope, Public, Static, HideBySig
+    new_spritepak(Int32): PrivateScope, Public, Static, HideBySig
+    free_spritepak(t_ik_spritepak): PrivateScope, Public, Static, HideBySig
+    load_sprites(String): PrivateScope, Public, Static, HideBySig
+    save_sprites(String, t_ik_spritepak): PrivateScope, Public, Static, HideBySig
+    ik_dsprite(t_ik_image, Int32, Int32, t_ik_sprite, Int32): PrivateScope, Public, Static, HideBySig
+    ik_drsprite(t_ik_image, Int32, Int32, Int32, Int32, t_ik_sprite, Int32): PrivateScope, Public, Static, HideBySig
+    ik_dspriteline(t_ik_image, Int32, Int32, Int32, Int32, Int32, Int32, Int32, t_ik_sprite, Int32): PrivateScope, Public, Static, HideBySig
+    get_num_ecards(): PrivateScope, Public, Static, HideBySig, SpecialName
+    cards_init(): PrivateScope, Public, Static, HideBySig
+    cards_deinit(): PrivateScope, Public, Static, HideBySig
+    card_display(Int32): PrivateScope, Public, Static, HideBySig
+    combat(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    select_ship(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    combat_start(Int32): PrivateScope, Public, Static, HideBySig
+    klakar_pissoff(): PrivateScope, Public, Static, HideBySig
+    combat_removeenemyship(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    combat_sim_end(): PrivateScope, Public, Static, HideBySig
+    combat_end(Int32): PrivateScope, Public, Static, HideBySig
+    combat_movement(Int32): PrivateScope, Public, Static, HideBySig
+    combat_checkalttargets(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    combat_findstuff2do(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    combat_checkescapes(Int32): PrivateScope, Public, Static, HideBySig
+    combat_findship(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    shiptonum(t_ship): PrivateScope, Public, Static, HideBySig
+    combat_updateshipstats(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    reset_ship(Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    combat_summon_klakar(Int32): PrivateScope, Public, Static, HideBySig
+    combat_launch_fighter(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    combat_use_gong(Int32): PrivateScope, Public, Static, HideBySig
+    combat_help_screen(): PrivateScope, Public, Static, HideBySig
+    combat_SoundFX(Int32, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    combat_autocamera(Int32): PrivateScope, Public, Static, HideBySig
+    combat_displayships(): PrivateScope, Public, Static, HideBySig
+    combat_display(Int32): PrivateScope, Public, Static, HideBySig
+    combat_init(): PrivateScope, Public, Static, HideBySig
+    combat_deinit(): PrivateScope, Public, Static, HideBySig
+    combat_inithulls(): PrivateScope, Public, Static, HideBySig
+    combat_deinithulls(): PrivateScope, Public, Static, HideBySig
+    combat_initshiptypes(): PrivateScope, Public, Static, HideBySig
+    combat_deinitshiptypes(): PrivateScope, Public, Static, HideBySig
+    combat_initshipweapons(): PrivateScope, Public, Static, HideBySig
+    combat_deinitshipweapons(): PrivateScope, Public, Static, HideBySig
+    combat_initshipsystems(): PrivateScope, Public, Static, HideBySig
+    combat_deinitshipsystems(): PrivateScope, Public, Static, HideBySig
+    combat_initsprites(): PrivateScope, Public, Static, HideBySig
+    combat_deinitsprites(): PrivateScope, Public, Static, HideBySig
+    initraces(): PrivateScope, Public, Static, HideBySig
+    sort_shiptype_systems(Int32): PrivateScope, Public, Static, HideBySig
+    cs_player_init(): PrivateScope, Public, Static, HideBySig
+    cs_enemy_init(race_ids): PrivateScope, Public, Static, HideBySig
+    combat_sim(): PrivateScope, Public, Static, HideBySig
+    cs_insertship(Int32): PrivateScope, Public, Static, HideBySig
+    cs_delship(Int32): PrivateScope, Public, Static, HideBySig
+    cs_setupbattle(): PrivateScope, Public, Static, HideBySig
+    load_all_sfx(): PrivateScope, Public, Static, HideBySig
+    textstrings_init(): PrivateScope, Public, Static, HideBySig
+    textstrings_deinit(): PrivateScope, Public, Static, HideBySig
+    interface_tutorial(Int32): PrivateScope, Public, Static, HideBySig
+    myopen(String, String): PrivateScope, Public, Static, HideBySig
+    read_line(FILE, String, String): PrivateScope, Public, Static, HideBySig
+    read_line1(FILE, String): PrivateScope, Public, Static, HideBySig
+    ik_start_log(): PrivateScope, Public, Static, HideBySig
+    ik_print_log(String, Object[]): PrivateScope, Public, Static, HideBySig
+    get_moddir(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_moddir(String): PrivateScope, Public, Static, HideBySig, SpecialName
+    Load_WAV(String, sfxsamples): PrivateScope, Public, Static, HideBySig
+    Delete_Sound(Int32): PrivateScope, Public, Static, HideBySig
+    Delete_All_Sounds(): PrivateScope, Public, Static, HideBySig
+    Play_Sound(sfxsamples, Int32, Int32(Optional, HasDefault), Int32(Optional, HasDefault), Int32(Optional, HasDefault), Int32(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+    Play_SoundFX(sfxsamples, Int32(Optional, HasDefault), Int32(Optional, HasDefault), Int32(Optional, HasDefault), Int32(Optional, HasDefault), Int32(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+    Set_Sound_Volume(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    Set_Sound_Freq(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    Set_Sound_Pan(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    Stop_Sound(Int32): PrivateScope, Public, Static, HideBySig
+    Stop_All_Sounds(): PrivateScope, Public, Static, HideBySig
+    Status_Sound(Int32): PrivateScope, Public, Static, HideBySig
+    Get_Sound_Size(Int32): PrivateScope, Public, Static, HideBySig
+    Get_Sound_Rate(Int32): PrivateScope, Public, Static, HideBySig
+    start_music(): PrivateScope, Public, Static, HideBySig
+    upd_music(Int32): PrivateScope, Public, Static, HideBySig
+    m_get_pan(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    m_get_vol(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    save_cur_music(String): PrivateScope, Public, Static, HideBySig
+    load_cur_music(String): PrivateScope, Public, Static, HideBySig
+    prep_music(Int32): PrivateScope, Public, Static, HideBySig
+    plop_music(Int32): PrivateScope, Public, Static, HideBySig
+    player_init(): PrivateScope, Public, Static, HideBySig
+    allies_init(): PrivateScope, Public, Static, HideBySig
+    starmap_init(): PrivateScope, Public, Static, HideBySig
+    starmap_create(): PrivateScope, Public, Static, HideBySig
+    starmap_createnebulagfx(): PrivateScope, Public, Static, HideBySig
+    starmap_deinit(): PrivateScope, Public, Static, HideBySig
+    starmap(): PrivateScope, Public, Static, HideBySig
+    starmap_display(Int32): PrivateScope, Public, Static, HideBySig
+    starmap_removeship(Int32): PrivateScope, Public, Static, HideBySig
+    starmap_advancedays(Int32): PrivateScope, Public, Static, HideBySig
+    starmap_stardist(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    starmap_nebuladist(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    starmap_sensefleets(): PrivateScope, Public, Static, HideBySig
+    starmap_entersystem(): PrivateScope, Public, Static, HideBySig
+    starmap_exploreplanet(): PrivateScope, Public, Static, HideBySig
+    starmap_explorehole(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    fleet_encounter(Int32, Int32(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+    starmap_meetrace(Int32): PrivateScope, Public, Static, HideBySig
+    klakar_encounter(): PrivateScope, Public, Static, HideBySig
+    enemy_encounter(Int32): PrivateScope, Public, Static, HideBySig
+    starmap_mantle(Int32): PrivateScope, Public, Static, HideBySig
+    muktian_encounter(): PrivateScope, Public, Static, HideBySig
+    kawangi_warning(): PrivateScope, Public, Static, HideBySig
+    kawangi_message(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    starmap_kawangimove(Int32): PrivateScope, Public, Static, HideBySig
+    starmap_installitem(Int32): PrivateScope, Public, Static, HideBySig
+    starmap_uninstallsystem(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    starmap_destroysystem(Int32): PrivateScope, Public, Static, HideBySig
+    starmap_additem(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    starmap_removeitem(Int32): PrivateScope, Public, Static, HideBySig
+    ally_install(Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    select_weaponpoint(): PrivateScope, Public, Static, HideBySig
+    item_colorcode(Int32): PrivateScope, Public, Static, HideBySig
+    klakar_trade(): PrivateScope, Public, Static, HideBySig
+    pay_item(String, String, Int32, Int32(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+    use_vacuum_collapser(String): PrivateScope, Public, Static, HideBySig
+    vacuum_collapse(Int32): PrivateScope, Public, Static, HideBySig
+    eledras_mirror(String): PrivateScope, Public, Static, HideBySig
+    eledras_bauble(String): PrivateScope, Public, Static, HideBySig
+    use_conograph(String): PrivateScope, Public, Static, HideBySig
+    probe_fleet_encounter(Int32): PrivateScope, Public, Static, HideBySig
+    probe_exploreplanet(Int32): PrivateScope, Public, Static, HideBySig
+    stellar_probe(String): PrivateScope, Public, Static, HideBySig
+    startgame_init(): PrivateScope, Public, Static, HideBySig
+    startgame_deinit(): PrivateScope, Public, Static, HideBySig
+    startgame(): PrivateScope, Public, Static, HideBySig
+    waitclick(Int32, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    loadconfig(): PrivateScope, Public, Static, HideBySig
+    modconfig_main(): PrivateScope, Public, Static, HideBySig
+    my_main(): PrivateScope, Public, Static, HideBySig
+    splash_screen(): PrivateScope, Public, Static, HideBySig
+    credits_screen(): PrivateScope, Public, Static, HideBySig
+    main_menu(): PrivateScope, Public, Static, HideBySig
+    main_init(): PrivateScope, Public, Static, HideBySig
+    main_deinit(): PrivateScope, Public, Static, HideBySig
+    intro_screen(): PrivateScope, Public, Static, HideBySig
+    combat_findtarget(t_ship, Int32): PrivateScope, Public, Static, HideBySig
+    combat_fire(t_ship, Int32, t_ship, Int32): PrivateScope, Public, Static, HideBySig
+    combat_addbeam(t_shipweapon, t_ship, Int32, t_ship, Int32, Int32(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+    combat_addproj(t_ship, Int32, t_ship, Int32): PrivateScope, Public, Static, HideBySig
+    combat_launchstages(Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    combat_addexplo(Int32, Int32, t_ik_spritepak, Int32, Int32, Int32, Int32, Int32, Int32(Optional, HasDefault), Int32(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+    combat_damageship(Int32, Int32, Int32, Int32, t_shipweapon, Int32(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+    combat_gethardpoint(t_ship, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    combat_killship(Int32, Int32, Int32(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+    game_over(): PrivateScope, Public, Static, HideBySig
+    endgame_init(): PrivateScope, Public, Static, HideBySig
+    endgame_deinit(): PrivateScope, Public, Static, HideBySig
+    new_image(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    del_image(t_ik_image): PrivateScope, Public, Static, HideBySig
+    ik_load_pcx(String, Byte[]): PrivateScope, Public, Static, HideBySig
+    ik_load_tga(String, Byte[]): PrivateScope, Public, Static, HideBySig
+    ik_save_screenshot(t_ik_image, Byte[]): PrivateScope, Public, Static, HideBySig
+    ik_save_tga(String, t_ik_image, Byte[]): PrivateScope, Public, Static, HideBySig
+    ik_setclip(Int32, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    ik_putpixel(t_ik_image, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    ik_getpixel(t_ik_image, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    ik_image_pointer(t_ik_image, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    ik_drawline(t_ik_image, Int32, Int32, Int32, Int32, Int32, Int32(Optional, HasDefault), Byte(Optional, HasDefault), Byte(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+    ik_drawbox(t_ik_image, Int32, Int32, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    ik_copybox(t_ik_image, t_ik_image, Int32, Int32, Int32, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    ik_drawmeter(t_ik_image, Int32, Int32, Int32, Int32, Int32, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    ik_draw_mousecursor(): PrivateScope, Public, Static, HideBySig
+    gfx_blarg(): PrivateScope, Public, Static, HideBySig
+    gfx_magnify(): PrivateScope, Public, Static, HideBySig
+    prep_screen(): PrivateScope, Public, Static, HideBySig
+    free_screen(): PrivateScope, Public, Static, HideBySig
+    ik_blit(): PrivateScope, Public, Static, HideBySig
+    gfx_checkswitch(): PrivateScope, Public, Static, HideBySig
+    halfbritescreen(): PrivateScope, Public, Static, HideBySig
+    reshalfbritescreen(): PrivateScope, Public, Static, HideBySig
+    resallhalfbritescreens(): PrivateScope, Public, Static, HideBySig
+    update_palette(): PrivateScope, Public, Static, HideBySig
+    set_palette_entry(Int32, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    get_palette_entry(Int32): PrivateScope, Public, Static, HideBySig
+    get_rgb_color(Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    calc_color_tables(Byte[]): PrivateScope, Public, Static, HideBySig
+    del_color_tables(): PrivateScope, Public, Static, HideBySig
+    get_direction(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    get_distance(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    gfx_initmagnifier(): PrivateScope, Public, Static, HideBySig
+    gfx_deinitmagnifier(): PrivateScope, Public, Static, HideBySig
+    ik_load_font(String, Byte, Byte): PrivateScope, Public, Static, HideBySig
+    ik_del_font(t_ik_font): PrivateScope, Public, Static, HideBySig
+    ik_print(t_ik_image, t_ik_font, Int32, Int32, Int32, String, Object[]): PrivateScope, Public, Static, HideBySig
+    ik_printbig(t_ik_image, t_ik_font, Int32, Int32, Byte, String, Object[]): PrivateScope, Public, Static, HideBySig
+    ik_text_input(Int32, Int32, Int32, t_ik_font, String, String, Int32(Optional, HasDefault), Int32(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+    ik_hiscore_input(Int32, Int32, Int32, t_ik_font, String): PrivateScope, Public, Static, HideBySig
+    ik_eventhandler(): PrivateScope, Public, Static, HideBySig
+    Game_Init(Object[]): PrivateScope, Public, Static, HideBySig
+    Game_Shutdown(Object[]): PrivateScope, Public, Static, HideBySig
+    key_pressed(Int32): PrivateScope, Public, Static, HideBySig
+    ik_inkey(): PrivateScope, Public, Static, HideBySig
+    ik_showcursor(): PrivateScope, Public, Static, HideBySig
+    ik_hidecursor(): PrivateScope, Public, Static, HideBySig
+    ik_mclick(): PrivateScope, Public, Static, HideBySig
+    start_ik_timer(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    set_ik_timer(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    get_ik_timer(Int32): PrivateScope, Public, Static, HideBySig
+    get_ik_timer_fr(Int32): PrivateScope, Public, Static, HideBySig
+    interface_init(): PrivateScope, Public, Static, HideBySig
+    interface_deinit(): PrivateScope, Public, Static, HideBySig
+    interface_drawborder(t_ik_image, Int32, Int32, Int32, Int32, Int32, Int32, String): PrivateScope, Public, Static, HideBySig
+    interface_thinborder(t_ik_image, Int32, Int32, Int32, Int32, Int32, Int32(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+    interface_textbox(t_ik_image, t_ik_font, Int32, Int32, Int32, Int32, Int32, String): PrivateScope, Public, Static, HideBySig
+    interface_textboxsize(t_ik_font, Int32, Int32, String): PrivateScope, Public, Static, HideBySig
+    interface_popup(t_ik_font, Int32, Int32, Int32, Int32, Int32, Int32, String, String, String(Optional, HasDefault), String(Optional, HasDefault), String(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+    interface_drawslider(t_ik_image, Int32, Int32, Int32, Int32, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    interface_drawbutton(t_ik_image, Int32, Int32, Int32, Int32, String): PrivateScope, Public, Static, HideBySig
+    interface_cleartuts(): PrivateScope, Public, Static, HideBySig
+Class DigitalEeel.SDL_Surface: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class DigitalEeel.FILE: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class DigitalEeel.SAIS+t_eventcard: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String name 'get set' : 
+    System.String text 'get set' : 
+    System.String text2 'get set' : 
+    Int32 type 'get set' : 
+    Int32 parm 'get set' : 
+  Methods:
+    get_name(): PrivateScope, Public, HideBySig, SpecialName
+    set_name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_text(): PrivateScope, Public, HideBySig, SpecialName
+    set_text(String): PrivateScope, Public, HideBySig, SpecialName
+    get_text2(): PrivateScope, Public, HideBySig, SpecialName
+    set_text2(String): PrivateScope, Public, HideBySig, SpecialName
+    get_type(): PrivateScope, Public, HideBySig, SpecialName
+    set_type(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_parm(): PrivateScope, Public, HideBySig, SpecialName
+    set_parm(Int32): PrivateScope, Public, HideBySig, SpecialName
+Struct DigitalEeel.SAIS+ecard_keyids: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ecard_keyids eckBegin = 0 : Public, Static, Literal, HasDefault
+    ecard_keyids eckName = 1 : Public, Static, Literal, HasDefault
+    ecard_keyids eckText = 2 : Public, Static, Literal, HasDefault
+    ecard_keyids eckText2 = 3 : Public, Static, Literal, HasDefault
+    ecard_keyids eckType = 4 : Public, Static, Literal, HasDefault
+    ecard_keyids eckParam = 5 : Public, Static, Literal, HasDefault
+    ecard_keyids eckEnd = 6 : Public, Static, Literal, HasDefault
+    ecard_keyids eckMax = 7 : Public, Static, Literal, HasDefault
+Struct DigitalEeel.SAIS+ecard_types: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ecard_types card_event = 0 : Public, Static, Literal, HasDefault
+    ecard_types card_ally = 1 : Public, Static, Literal, HasDefault
+    ecard_types card_item = 2 : Public, Static, Literal, HasDefault
+    ecard_types card_rareitem = 3 : Public, Static, Literal, HasDefault
+    ecard_types card_lifeform = 4 : Public, Static, Literal, HasDefault
+    ecard_types card_max = 5 : Public, Static, Literal, HasDefault
+Struct DigitalEeel.SAIS+combat_tactics: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    combat_tactics tac_pursue = 0 : Public, Static, Literal, HasDefault
+    combat_tactics tac_attack = 1 : Public, Static, Literal, HasDefault
+    combat_tactics tac_move = 2 : Public, Static, Literal, HasDefault
+    combat_tactics tac_flee = 3 : Public, Static, Literal, HasDefault
+Class DigitalEeel.SAIS+t_hardpoint: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Byte type : Public
+    Byte size : Public
+    Byte x : Public
+    Byte y : Public
+    Int16 a : Public
+    Int16 f : Public
+Class DigitalEeel.SAIS+t_hull: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 size : Public
+    Int32 hits : Public
+    Int32 mass : Public
+    Int32 numh : Public
+    t_ik_sprite sprite : Public
+    t_ik_sprite silu : Public
+    t_hardpoint[] hardpts : Public
+  Properties:
+    System.String name 'get set' : 
+  Methods:
+    get_name(): PrivateScope, Public, HideBySig, SpecialName
+    set_name(String): PrivateScope, Public, HideBySig, SpecialName
+Class DigitalEeel.SAIS+t_shiptype: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    race_ids race : Public
+    Int32 flag : Public
+    Int32 hull : Public
+    Int32 hits : Public
+    Int32 engine : Public
+    Int32 thrust : Public
+    Int32 speed : Public
+    Int32 turn : Public
+    Int32 sensor : Public
+    Int32 num_systems : Public
+    Int32 sys_eng : Public
+    Int32 sys_thru : Public
+    Int16[] system : Public
+    Int16[] sysdmg : Public
+  Properties:
+    System.String name 'get set' : 
+  Methods:
+    get_name(): PrivateScope, Public, HideBySig, SpecialName
+    set_name(String): PrivateScope, Public, HideBySig, SpecialName
+Class DigitalEeel.SAIS+t_ship: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 type : Public
+    Int32 hits : Public
+    Int32 shld : Public
+    Int32 shld_type : Public
+    Int32 shld_time : Public
+    Int32 shld_charge : Public
+    Int32 damage_time : Public
+    Int32 dmgc_type : Public
+    Int32 dmgc_time : Public
+    Int32 cpu_type : Public
+    Int32 ecm_type : Public
+    Int32 clo_type : Public
+    Int32 sys_thru : Public
+    Int32 sys_shld : Public
+    Int32 sys_dmgc : Public
+    Int32 sys_cpu : Public
+    Int32 sys_ecm : Public
+    Int32 sys_clo : Public
+    Int32 speed : Public
+    Int32 turn : Public
+    Int32[] wepfire : Public
+    Int32[] syshits : Public
+    Int32 own : Public
+    Int32 x : Public
+    Int32 y : Public
+    Int32 a : Public
+    Int32 vx : Public
+    Int32 vy : Public
+    Int32 va : Public
+    Int32 ds_x : Public
+    Int32 ds_y : Public
+    Int32 ds_s : Public
+    Int32 wp_x : Public
+    Int32 wp_y : Public
+    Int32 escaped : Public
+    Int32 wp_time : Public
+    Int32 flee : Public
+    Int32 patx : Public
+    Int32 paty : Public
+    Int32 cloaked : Public
+    Int32 cloaktime : Public
+    Int32 tel_x : Public
+    Int32 tel_y : Public
+    Int32 teltime : Public
+    Int32 active : Public
+    Int32 aistart : Public
+    Int32 target : Public
+    Int32 tac : Public
+    Int32 angle : Public
+    Int32 dist : Public
+    Int32 launchtime : Public
+    Int32 frange : Public
+    Int32 bong_start : Public
+    Int32 bong_end : Public
+  Properties:
+    System.String name 'get set' : 
+  Methods:
+    get_name(): PrivateScope, Public, HideBySig, SpecialName
+    set_name(String): PrivateScope, Public, HideBySig, SpecialName
+Class DigitalEeel.SAIS+t_shipweapon: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 stage : Public
+    Int32 type : Public
+    Int32 flags : Public
+    t_ik_sprite sprite : Public
+    Int32 size : Public
+    Int32 sound1 : Public
+    Int32 sound2 : Public
+    Int32 rate : Public
+    Int32 speed : Public
+    Int32 damage : Public
+    Int32 range : Public
+    Int32 item : Public
+  Properties:
+    System.String name 'get set' : 
+  Methods:
+    get_name(): PrivateScope, Public, HideBySig, SpecialName
+    set_name(String): PrivateScope, Public, HideBySig, SpecialName
+Class DigitalEeel.SAIS+t_shipsystem: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int16 type : Public
+    Int16 size : Public
+    Int32[] par : Public
+    Int32 item : Public
+  Properties:
+    System.String name 'get set' : 
+  Methods:
+    get_name(): PrivateScope, Public, HideBySig, SpecialName
+    set_name(String): PrivateScope, Public, HideBySig, SpecialName
+Class DigitalEeel.SAIS+t_wepbeam: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    t_shipweapon wep : Public
+    t_ship src : Public
+    t_ship dst : Public
+    Int32 stg : Public
+    Int32 ang : Public
+    Int32 len : Public
+    Int32 stp : Public
+    Int32 dsp : Public
+    Int32 str : Public
+    Int32 dmt : Public
+    Int32 end : Public
+Class DigitalEeel.SAIS+t_wepproj: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    t_shipweapon wep : Public
+    t_ship src : Public
+    t_ship dst : Public
+    Int32 str : Public
+    Int32 end : Public
+    Int32 x : Public
+    Int32 y : Public
+    Int32 a : Public
+    Int32 vx : Public
+    Int32 vy : Public
+    Int32 va : Public
+    Int32 hits : Public
+Class DigitalEeel.SAIS+t_explosion: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    t_ik_spritepak spr : Public
+    Int32 x : Public
+    Int32 y : Public
+    Int32 a : Public
+    Int32 vx : Public
+    Int32 vy : Public
+    Int32 va : Public
+    Int32 str : Public
+    Int32 end : Public
+    Int32 size : Public
+    Int32 zoom : Public
+    Int32 spin : Public
+    Int32 fade : Public
+    Int32 anim : Public
+    Int32 cam : Public
+Class DigitalEeel.SAIS+t_combatcamera: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 x : Public
+    Int32 y : Public
+    Int32 z : Public
+    Int32 ship_sel : Public
+    Int32 ship_trg : Public
+    Int32 time_sel : Public
+    Int32 time_trg : Public
+    Int32 drag_trg : Public
+Struct DigitalEeel.SAIS+hull_keyids: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    hull_keyids hlkBegin = 0 : Public, Static, Literal, HasDefault
+    hull_keyids hlkName = 1 : Public, Static, Literal, HasDefault
+    hull_keyids hlkSize = 2 : Public, Static, Literal, HasDefault
+    hull_keyids hlkHits = 3 : Public, Static, Literal, HasDefault
+    hull_keyids hlkMass = 4 : Public, Static, Literal, HasDefault
+    hull_keyids hlkSprite = 5 : Public, Static, Literal, HasDefault
+    hull_keyids hlkSilu = 6 : Public, Static, Literal, HasDefault
+    hull_keyids hlkWeapon = 7 : Public, Static, Literal, HasDefault
+    hull_keyids hlkEngine = 8 : Public, Static, Literal, HasDefault
+    hull_keyids hlkThruster = 9 : Public, Static, Literal, HasDefault
+    hull_keyids hlkFighter = 10 : Public, Static, Literal, HasDefault
+    hull_keyids hlkEnd = 11 : Public, Static, Literal, HasDefault
+    hull_keyids hlkMax = 12 : Public, Static, Literal, HasDefault
+Struct DigitalEeel.SAIS+hull_hardpttypes: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    hull_hardpttypes hdpWeapon = 0 : Public, Static, Literal, HasDefault
+    hull_hardpttypes hdpEngine = 1 : Public, Static, Literal, HasDefault
+    hull_hardpttypes hdpThruster = 2 : Public, Static, Literal, HasDefault
+    hull_hardpttypes hdpFighter = 3 : Public, Static, Literal, HasDefault
+    hull_hardpttypes hdpMax = 4 : Public, Static, Literal, HasDefault
+Struct DigitalEeel.SAIS+shiptype_keyids: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    shiptype_keyids shkBegin = 0 : Public, Static, Literal, HasDefault
+    shiptype_keyids shkName = 1 : Public, Static, Literal, HasDefault
+    shiptype_keyids shkRace = 2 : Public, Static, Literal, HasDefault
+    shiptype_keyids shkFlag = 3 : Public, Static, Literal, HasDefault
+    shiptype_keyids shkHull = 4 : Public, Static, Literal, HasDefault
+    shiptype_keyids shkArmor = 5 : Public, Static, Literal, HasDefault
+    shiptype_keyids shkSystem = 6 : Public, Static, Literal, HasDefault
+    shiptype_keyids shkEngine = 7 : Public, Static, Literal, HasDefault
+    shiptype_keyids shkThruster = 8 : Public, Static, Literal, HasDefault
+    shiptype_keyids shkWeapon = 9 : Public, Static, Literal, HasDefault
+    shiptype_keyids shkEnd = 10 : Public, Static, Literal, HasDefault
+    shiptype_keyids shkMax = 11 : Public, Static, Literal, HasDefault
+Struct DigitalEeel.SAIS+weapon_keyids: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    weapon_keyids wpkBegin = 0 : Public, Static, Literal, HasDefault
+    weapon_keyids wpkName = 1 : Public, Static, Literal, HasDefault
+    weapon_keyids wpkStage = 2 : Public, Static, Literal, HasDefault
+    weapon_keyids wpkType = 3 : Public, Static, Literal, HasDefault
+    weapon_keyids wpkFlag = 4 : Public, Static, Literal, HasDefault
+    weapon_keyids wpkSprite = 5 : Public, Static, Literal, HasDefault
+    weapon_keyids wpkSize = 6 : Public, Static, Literal, HasDefault
+    weapon_keyids wpkSound1 = 7 : Public, Static, Literal, HasDefault
+    weapon_keyids wpkSound2 = 8 : Public, Static, Literal, HasDefault
+    weapon_keyids wpkRate = 9 : Public, Static, Literal, HasDefault
+    weapon_keyids wpkSpeed = 10 : Public, Static, Literal, HasDefault
+    weapon_keyids wpkDamage = 11 : Public, Static, Literal, HasDefault
+    weapon_keyids wpkRange = 12 : Public, Static, Literal, HasDefault
+    weapon_keyids wpkEnd = 13 : Public, Static, Literal, HasDefault
+    weapon_keyids wpkMax = 14 : Public, Static, Literal, HasDefault
+Struct DigitalEeel.SAIS+weapon_flagids: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    weapon_flagids wpfTrans = 1 : Public, Static, Literal, HasDefault
+    weapon_flagids wpfSpin = 2 : Public, Static, Literal, HasDefault
+    weapon_flagids wpfDisperse = 4 : Public, Static, Literal, HasDefault
+    weapon_flagids wpfImplode = 8 : Public, Static, Literal, HasDefault
+    weapon_flagids wpfHoming = 16 : Public, Static, Literal, HasDefault
+    weapon_flagids wpfSplit = 32 : Public, Static, Literal, HasDefault
+    weapon_flagids wpfShock1 = 64 : Public, Static, Literal, HasDefault
+    weapon_flagids wpfShock2 = 128 : Public, Static, Literal, HasDefault
+    weapon_flagids wpfNova = 256 : Public, Static, Literal, HasDefault
+    weapon_flagids wpfWiggle = 512 : Public, Static, Literal, HasDefault
+    weapon_flagids wpfStrail = 1024 : Public, Static, Literal, HasDefault
+    weapon_flagids wpfNoclip = 2048 : Public, Static, Literal, HasDefault
+    weapon_flagids wpfMax = 12 : Public, Static, Literal, HasDefault
+Struct DigitalEeel.SAIS+system_keyids: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    system_keyids sykBegin = 0 : Public, Static, Literal, HasDefault
+    system_keyids sykName = 1 : Public, Static, Literal, HasDefault
+    system_keyids sykType = 2 : Public, Static, Literal, HasDefault
+    system_keyids sykSize = 3 : Public, Static, Literal, HasDefault
+    system_keyids sykParam1 = 4 : Public, Static, Literal, HasDefault
+    system_keyids sykParam2 = 5 : Public, Static, Literal, HasDefault
+    system_keyids sykParam3 = 6 : Public, Static, Literal, HasDefault
+    system_keyids sykParam4 = 7 : Public, Static, Literal, HasDefault
+    system_keyids sykEnd = 8 : Public, Static, Literal, HasDefault
+    system_keyids sykMax = 9 : Public, Static, Literal, HasDefault
+Struct DigitalEeel.SAIS+system_types: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    system_types sys_weapon = 0 : Public, Static, Literal, HasDefault
+    system_types sys_thruster = 1 : Public, Static, Literal, HasDefault
+    system_types sys_engine = 2 : Public, Static, Literal, HasDefault
+    system_types sys_shield = 3 : Public, Static, Literal, HasDefault
+    system_types sys_computer = 4 : Public, Static, Literal, HasDefault
+    system_types sys_ecm = 5 : Public, Static, Literal, HasDefault
+    system_types sys_sensor = 6 : Public, Static, Literal, HasDefault
+    system_types sys_damage = 7 : Public, Static, Literal, HasDefault
+    system_types sys_misc = 8 : Public, Static, Literal, HasDefault
+Struct DigitalEeel.SAIS+race_keyids: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    race_keyids rckBegin = 0 : Public, Static, Literal, HasDefault
+    race_keyids rckName = 1 : Public, Static, Literal, HasDefault
+    race_keyids rckText = 2 : Public, Static, Literal, HasDefault
+    race_keyids rckText2 = 3 : Public, Static, Literal, HasDefault
+    race_keyids rckEnd = 4 : Public, Static, Literal, HasDefault
+    race_keyids rckMax = 5 : Public, Static, Literal, HasDefault
+Struct DigitalEeel.SAIS+race_ids: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    race_ids race_none = 0 : Public, Static, Literal, HasDefault
+    race_ids race_terran = 1 : Public, Static, Literal, HasDefault
+    race_ids race_klakar = 2 : Public, Static, Literal, HasDefault
+    race_ids race_zorg = 3 : Public, Static, Literal, HasDefault
+    race_ids race_muktian = 4 : Public, Static, Literal, HasDefault
+    race_ids race_garthan = 5 : Public, Static, Literal, HasDefault
+    race_ids race_tanru = 6 : Public, Static, Literal, HasDefault
+    race_ids race_urluquai = 7 : Public, Static, Literal, HasDefault
+    race_ids race_kawangi = 8 : Public, Static, Literal, HasDefault
+    race_ids race_unknown = 9 : Public, Static, Literal, HasDefault
+    race_ids race_drone = 10 : Public, Static, Literal, HasDefault
+    race_ids race_max = 11 : Public, Static, Literal, HasDefault
+Class DigitalEeel.SAIS+t_job: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 value : Public
+  Properties:
+    System.String name 'get set' : 
+  Methods:
+    get_name(): PrivateScope, Public, HideBySig, SpecialName
+    set_name(String): PrivateScope, Public, HideBySig, SpecialName
+Class DigitalEeel.SAIS+t_score: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 score : Public
+    Int32 date : Public
+  Properties:
+    System.String cname 'get set' : 
+    System.String sname 'get set' : 
+    System.String deathmsg 'get set' : 
+  Methods:
+    get_cname(): PrivateScope, Public, HideBySig, SpecialName
+    set_cname(String): PrivateScope, Public, HideBySig, SpecialName
+    get_sname(): PrivateScope, Public, HideBySig, SpecialName
+    set_sname(String): PrivateScope, Public, HideBySig, SpecialName
+    get_deathmsg(): PrivateScope, Public, HideBySig, SpecialName
+    set_deathmsg(String): PrivateScope, Public, HideBySig, SpecialName
+Class DigitalEeel.SAIS+t_paletteentry: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Byte r : Public
+    Byte g : Public
+    Byte b : Public
+    Byte a : Public
+Class DigitalEeel.SAIS+t_ik_image: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 w : Public
+    Int32 h : Public
+    Int32 pitch : Public
+    IntPtr[] data : Public
+Class DigitalEeel.SAIS+t_ik_sprite: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Fields:
+    Int32 w : Public
+    Int32 h : Public
+    Int32 co : Public
+    Int32[] data : Public
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class DigitalEeel.SAIS+t_ik_spritepak: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 num : Public
+    System.Collections.Generic.List`1[DigitalEeel.SAIS+t_ik_sprite] spr : Public
+Class DigitalEeel.SAIS+t_ik_font: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int16 w : Public
+    Int16 h : Public
+    Byte[] data : Public
+Class DigitalEeel.SAIS+t_gamesettings: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 dif_nebula : Public
+    Int32 dif_enemies : Public
+    Int32 dif_ship : Public
+    Int32 random_names : Public
+    Byte opt_timerwarnings : Public
+    Byte opt_mucrontext : Public
+    Byte opt_timeremaining : Public
+    Byte opt_mousemode : Public
+    Byte opt_smoketrails : Public
+    Byte opt_lensflares : Public
+    Int16 opt_volume : Public
+  Properties:
+    System.String captname 'get set' : 
+    System.String shipname 'get set' : 
+  Methods:
+    get_captname(): PrivateScope, Public, HideBySig, SpecialName
+    set_captname(String): PrivateScope, Public, HideBySig, SpecialName
+    get_shipname(): PrivateScope, Public, HideBySig, SpecialName
+    set_shipname(String): PrivateScope, Public, HideBySig, SpecialName
+Struct DigitalEeel.SAIS+sfxsamples: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    sfxsamples WAV_BEAM1 = 0 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_BEAM2 = 1 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_BEAM3 = 2 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_BEAM4 = 3 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_BEAM5 = 4 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_BEAM6 = 5 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_BEAM7 = 6 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_PROJ1 = 7 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_PROJ2 = 8 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_PROJ3 = 9 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_PROJ4 = 10 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_PROJ5 = 11 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_PROJ6 = 12 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_PROJ7 = 13 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_PROJ8 = 14 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_PROJ9 = 15 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_PROJ10 = 16 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_PROJ11 = 17 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_HIT1 = 18 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_HIT2 = 19 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_HIT3 = 20 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_HIT4 = 21 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_HIT5 = 22 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_EXPLO1 = 23 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_EXPLO2 = 24 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_SHIELD = 25 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_CLOAKIN = 26 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_CLOAKOUT = 27 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_BOARD = 28 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_SYSDAMAGE = 29 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_SYSHIT1 = 30 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_SYSHIT2 = 31 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_SYSFIXED = 32 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_TELEPORT = 33 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_FIERYFURY = 34 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_FIGHTERLAUNCH = 35 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_ENDSIMULATION = 36 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_YES = 37 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_NO = 38 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_ACCEPT = 39 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_DECLINE = 40 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_DOT = 41 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_DOT2 = 42 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_SELECT = 43 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_DESELECT = 44 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_SELECTSTAR = 45 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_INFO = 46 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_SELECTSHIP = 47 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_WAIT = 48 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_SLIDER = 49 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_INSTALL = 50 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_INSTALL2 = 51 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_LOCK = 52 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_DEPART = 53 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_ARRIVE = 54 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_HYPERDRIVE = 55 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_FOLDSPACE = 56 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_RADAR = 57 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_SCANNER = 58 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_BRIDGE = 59 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_MESSAGE = 60 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_TANRUMESSAGE = 61 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_PAYMERC = 62 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_TRADE = 63 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_CASH = 64 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_PROBE_LAUNCH = 65 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_PROBE_DEST = 66 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_FOMAX_HI = 67 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_FOMAX_BYE = 68 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_FOMAX_WISH = 69 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_TIMER = 70 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_WARNING = 71 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_OPTICALS = 72 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_TITLE1 = 73 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_TITLE2 = 74 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_TITLE3 = 75 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_TITLE4 = 76 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_TITLE5 = 77 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_LOGO = 78 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_KLAKAR = 79 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_ZORG = 80 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_MUKTIAN = 81 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_GARTHAN = 82 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_TANRU = 83 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_URLUQUAI = 84 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_KAWANGI = 85 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_BLACKHOLE = 86 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_BLACKHOLEDEATH = 87 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_COLLAPSER = 88 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_ALLY = 89 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_FLARE = 90 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_SPY = 91 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_NOVA = 92 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_SABOTEUR = 93 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_WHALES = 94 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_CUBE = 95 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_SPACEHULK = 96 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_GASGIANT = 97 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_NOPLANET = 98 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_WEAPON = 99 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_SYSTEM = 100 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_DEVICE = 101 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_LIFEFORM = 102 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_DRIVE = 103 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_PLATINUM = 104 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_TITANIUM = 105 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_BRASS = 106 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_PLASTIC = 107 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_CENOTAPH = 108 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_TORC = 109 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_GONG = 110 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_MANTLE = 111 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_WHISTLE = 112 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_HORLOGE = 113 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_TOY = 114 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_CODEX = 115 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_SCULPTURE = 116 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_CONOGRAPH = 117 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_MONOCLE = 118 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_BAUBLE = 119 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_MIRROR = 120 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_MUMMY = 121 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_MONOLITH = 122 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_CONOGRAPH2 = 123 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_MUS_START = 124 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_MUS_SPLASH = 125 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_MUS_THEME = 126 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_MUS_TITLE = 127 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_MUS_DEATH = 128 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_MUS_VICTORY = 129 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_MUS_COMBAT = 130 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_MUS_NEBULA = 131 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_MUS_HISCORE = 132 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_MUS_ROCK = 133 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_MUS_SIMULATOR = 134 : Public, Static, Literal, HasDefault
+    sfxsamples WAV_MAX = 135 : Public, Static, Literal, HasDefault
+Class DigitalEeel.SAIS+t_wavesound: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String name 'get set' : 
+    System.Object wave 'get set' : 
+  Methods:
+    get_name(): PrivateScope, Public, HideBySig, SpecialName
+    set_name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_wave(): PrivateScope, Public, HideBySig, SpecialName
+    set_wave(Object): PrivateScope, Public, HideBySig, SpecialName
+Class DigitalEeel.SAIS+t_sfxchannel: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class DigitalEeel.SAIS+t_song: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class DigitalEeel.SAIS+t_hud: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 invslider : Public
+    Int32 invselect : Public
+    Int32 sysslider : Public
+    Int32 sysselect : Public
+Class DigitalEeel.SAIS+t_starsystem: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 x : Public
+    Int32 y : Public
+    Int32 color : Public
+    Int32 planet : Public
+    Int32 planetgfx : Public
+    Int32 novadate : Public
+    Int32 novatype : Public
+    Int32 novatime : Public
+    Int32 card : Public
+    Int32 explored : Public
+    Int32 ds_x : Public
+    Int32 ds_y : Public
+  Properties:
+    System.String starname 'get set' : 
+    System.String planetname 'get set' : 
+  Methods:
+    get_starname(): PrivateScope, Public, HideBySig, SpecialName
+    set_starname(String): PrivateScope, Public, HideBySig, SpecialName
+    get_planetname(): PrivateScope, Public, HideBySig, SpecialName
+    set_planetname(String): PrivateScope, Public, HideBySig, SpecialName
+Class DigitalEeel.SAIS+t_planettype: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 bonus : Public
+  Properties:
+    System.String name 'get set' : 
+    System.String text 'get set' : 
+  Methods:
+    get_name(): PrivateScope, Public, HideBySig, SpecialName
+    set_name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_text(): PrivateScope, Public, HideBySig, SpecialName
+    set_text(String): PrivateScope, Public, HideBySig, SpecialName
+Class DigitalEeel.SAIS+t_startype: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String name 'get set' : 
+    System.String text 'get set' : 
+  Methods:
+    get_name(): PrivateScope, Public, HideBySig, SpecialName
+    set_name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_text(): PrivateScope, Public, HideBySig, SpecialName
+    set_text(String): PrivateScope, Public, HideBySig, SpecialName
+Class DigitalEeel.SAIS+t_blackhole: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 x : Public
+    Int32 y : Public
+    Int16 size : Public
+    Int16 explored : Public
+  Properties:
+    System.String name 'get set' : 
+  Methods:
+    get_name(): PrivateScope, Public, HideBySig, SpecialName
+    set_name(String): PrivateScope, Public, HideBySig, SpecialName
+Class DigitalEeel.SAIS+t_nebula: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 x : Public
+    Int32 y : Public
+    Int32 sprite : Public
+Class DigitalEeel.SAIS+t_player: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 x : Public
+    Int32 y : Public
+    Int32 a : Public
+    Int32 system : Public
+    Int32 target : Public
+    Int32 distance : Public
+    Int32 nebula : Public
+    Int32 enroute : Public
+    Int32 engage : Public
+    Int32 fold : Public
+    Int32 hypdate : Public
+    Int32 foldate : Public
+    Int32 hyptime : Public
+    Int32 explore : Public
+    Int32 stardate : Public
+    Int32 death : Public
+    Int32 deatht : Public
+    Int32 hole : Public
+    Int32 num_ships : Public
+    race_ids[] ships : Public
+    Int32 sel_ship : Public
+    Int32 sel_ship_time : Public
+    Int32[] items : Public
+    Int32[] itemflags : Public
+    Int32 num_items : Public
+    Int32 bonusdata : Public
+  Properties:
+    System.String captname 'get set' : 
+    System.String shipname 'get set' : 
+    System.String deathmsg 'get set' : 
+  Methods:
+    get_captname(): PrivateScope, Public, HideBySig, SpecialName
+    set_captname(String): PrivateScope, Public, HideBySig, SpecialName
+    get_shipname(): PrivateScope, Public, HideBySig, SpecialName
+    set_shipname(String): PrivateScope, Public, HideBySig, SpecialName
+    get_deathmsg(): PrivateScope, Public, HideBySig, SpecialName
+    set_deathmsg(String): PrivateScope, Public, HideBySig, SpecialName
+Class DigitalEeel.SAIS+t_itemtype: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 type : Public
+    Int32 cost : Public
+    Int32 index : Public
+    Int32 flag : Public
+    Int32 sound : Public
+    Int32 loopsnd : Public
+  Properties:
+    System.String name 'get set' : 
+    System.String text 'get set' : 
+    System.String clas 'get set' : 
+  Methods:
+    get_name(): PrivateScope, Public, HideBySig, SpecialName
+    set_name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_text(): PrivateScope, Public, HideBySig, SpecialName
+    set_text(String): PrivateScope, Public, HideBySig, SpecialName
+    get_clas(): PrivateScope, Public, HideBySig, SpecialName
+    set_clas(String): PrivateScope, Public, HideBySig, SpecialName
+Class DigitalEeel.SAIS+t_fleet: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 system : Public
+    Int32 target : Public
+    Int32 enroute : Public
+    Int32 distance : Public
+    Int32 num_ships : Public
+    race_ids[] ships : Public
+    race_ids race : Public
+    Int32 explored : Public
+    Int32 blowtime : Public
+Class DigitalEeel.SAIS+t_month: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 sd : Public
+    Int32 le : Public
+  Properties:
+    System.String name 'get set' : 
+    System.String longname 'get set' : 
+  Methods:
+    get_name(): PrivateScope, Public, HideBySig, SpecialName
+    set_name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_longname(): PrivateScope, Public, HideBySig, SpecialName
+    set_longname(String): PrivateScope, Public, HideBySig, SpecialName
+Class DigitalEeel.SAIS+t_race: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 met : Public
+    Int32 fleet : Public
+  Properties:
+    System.String name 'get set' : 
+    System.String text 'get set' : 
+    System.String text2 'get set' : 
+  Methods:
+    get_name(): PrivateScope, Public, HideBySig, SpecialName
+    set_name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_text(): PrivateScope, Public, HideBySig, SpecialName
+    set_text(String): PrivateScope, Public, HideBySig, SpecialName
+    get_text2(): PrivateScope, Public, HideBySig, SpecialName
+    set_text2(String): PrivateScope, Public, HideBySig, SpecialName
+Class DigitalEeel.SAIS+t_racefleet: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 race : Public
+    Int32 num_fleets : Public
+    Int32[] stype : Public
+    Int32[,] fleets : Public
+    Int32[,] diff : Public
