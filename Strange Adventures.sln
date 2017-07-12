@@ -1,14 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Strange Adventures", "Strange Adventures.vcxproj", "{3C3AFBE1-C33F-4209-96DD-9A11B0A0BA2C}"
-	ProjectSection(ProjectDependencies) = postProject
-		{59799F09-33DB-43E5-A867-51AFD946FB5E} = {59799F09-33DB-43E5-A867-51AFD946FB5E}
-	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibSAIS", "LibSAIS\LibSAIS.csproj", "{59799F09-33DB-43E5-A867-51AFD946FB5E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAISSharp", "SAISSharp\SAISSharp.csproj", "{E566A3C3-529C-4B7E-BBCC-D49347CB7352}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,16 +27,18 @@ Global
 		{3C3AFBE1-C33F-4209-96DD-9A11B0A0BA2C}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{3C3AFBE1-C33F-4209-96DD-9A11B0A0BA2C}.Release|Win32.ActiveCfg = Release|Win32
 		{3C3AFBE1-C33F-4209-96DD-9A11B0A0BA2C}.Release|Win32.Build.0 = Release|Win32
-		{59799F09-33DB-43E5-A867-51AFD946FB5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{59799F09-33DB-43E5-A867-51AFD946FB5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{59799F09-33DB-43E5-A867-51AFD946FB5E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{59799F09-33DB-43E5-A867-51AFD946FB5E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{59799F09-33DB-43E5-A867-51AFD946FB5E}.Debug|Win32.ActiveCfg = Debug|Any CPU
-		{59799F09-33DB-43E5-A867-51AFD946FB5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{59799F09-33DB-43E5-A867-51AFD946FB5E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{59799F09-33DB-43E5-A867-51AFD946FB5E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{59799F09-33DB-43E5-A867-51AFD946FB5E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{59799F09-33DB-43E5-A867-51AFD946FB5E}.Release|Win32.ActiveCfg = Release|Any CPU
+		{E566A3C3-529C-4B7E-BBCC-D49347CB7352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E566A3C3-529C-4B7E-BBCC-D49347CB7352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E566A3C3-529C-4B7E-BBCC-D49347CB7352}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E566A3C3-529C-4B7E-BBCC-D49347CB7352}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E566A3C3-529C-4B7E-BBCC-D49347CB7352}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{E566A3C3-529C-4B7E-BBCC-D49347CB7352}.Debug|Win32.Build.0 = Debug|Any CPU
+		{E566A3C3-529C-4B7E-BBCC-D49347CB7352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E566A3C3-529C-4B7E-BBCC-D49347CB7352}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E566A3C3-529C-4B7E-BBCC-D49347CB7352}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E566A3C3-529C-4B7E-BBCC-D49347CB7352}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E566A3C3-529C-4B7E-BBCC-D49347CB7352}.Release|Win32.ActiveCfg = Release|Any CPU
+		{E566A3C3-529C-4B7E-BBCC-D49347CB7352}.Release|Win32.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

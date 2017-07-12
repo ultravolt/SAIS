@@ -1,2 +1,2 @@
-#TargetFrameworkVersion=v4.0:PlatformToolSet=v140:EnableManagedIncrementalBuild=true:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=8.1
-Debug|Win32|C:\dev\Games\SAIS\|
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v141:EnableManagedIncrementalBuild=true:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=8.1
+Debug|Win32|D:\Dev\SAIS\|

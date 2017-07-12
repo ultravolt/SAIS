@@ -1,36 +1,6 @@
-﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(367,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
-C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(368,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1820,5): warning MSB3274: The primary reference "C:\dev\Games\SAIS\LibSAIS\bin\Debug\LibSAIS.dll" could not be resolved because it was built against the ".NETFramework,Version=v4.5.1" framework. This is a higher version than the currently targeted framework ".NETFramework,Version=v4.0".
-C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.MetaGen.targets(91,5): warning : Required file "C:\DEV\SAIS\LIBSAIS\BIN\DEBUG\LIBSAIS.DLL" is missing.
-  cards.cpp
-  combat.cpp
-  combat_display.cpp
-  combat_init.cpp
-  combat_sim.cpp
-  combat_weapons.cpp
-  endgame.cpp
-  font.cpp
-  gfx.cpp
-  interface.cpp
-  is_fileio.cpp
-  main.cpp
-  modconfig.cpp
-  sdl_iface.cpp
-  sdl_main.cpp
-  sound.cpp
-  sprites.cpp
-  starmap.cpp
-  starmap_encounters.cpp
-  starmap_init.cpp
-  Generating Code...
-  Compiling...
-  starmap_inventory.cpp
-  startgame.cpp
-  textstr.cpp
-  w32_gfx.cpp
-  w32_sound.cpp
-  Generating Code...
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(372,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(373,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
   .NETFramework,Version=v4.0.AssemblyAttributes.cpp
-C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1189,5): warning MSB8012: TargetPath(C:\dev\Games\SAIS\Debug\strange_dbg.exe) does not match the Linker's OutputFile property value (C:\dev\Games\SAIS\bin\strange_dbg.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
-  Strange Adventures.vcxproj -> C:\dev\Games\SAIS\Debug\strange_dbg.exe
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1198,5): warning MSB8012: TargetPath(D:\Dev\SAIS\Debug\strange_dbg.exe) does not match the Linker's OutputFile property value (D:\Dev\SAIS\bin\strange_dbg.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+  Strange Adventures.vcxproj -> D:\Dev\SAIS\Debug\strange_dbg.exe
   Strange Adventures.vcxproj -> Debug\strange_dbg.pdb (Full PDB)
